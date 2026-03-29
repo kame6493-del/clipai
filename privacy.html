@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ClipAI</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f172a; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 40px 20px; line-height: 1.8; }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 { font-size: 32px; margin-bottom: 8px; background: linear-gradient(135deg, #6366f1, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .date { color: #64748b; margin-bottom: 32px; }
+    h2 { font-size: 20px; margin: 28px 0 12px; color: #a78bfa; }
+    p, li { color: #94a3b8; font-size: 15px; margin-bottom: 12px; }
+    ul { padding-left: 24px; }
+    a { color: #6366f1; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: March 29, 2026</p>
+
+    <h2>Overview</h2>
+    <p>ClipAI ("the Extension") is a browser extension that saves web pages with AI-generated summaries and tags to a local clip library. We are committed to protecting your privacy.</p>
+
+    <h2>Data Collection</h2>
+    <p>The Extension collects and processes the following data:</p>
+    <ul>
+      <li><strong>Website Content:</strong> When you click "Save This Page", the text content, title, URL, and favicon of the current page are read. The text is sent to OpenAI's API to generate a summary and tags. The summary, tags, title, URL, and favicon are stored locally in your browser.</li>
+      <li><strong>Web History:</strong> URLs and titles of pages you explicitly save are stored locally in your browser as part of your clip library. We do not track browsing activity — only pages you choose to save.</li>
+      <li><strong>Usage Counts:</strong> Monthly clip counts are tracked locally in your browser to enforce free tier limits (20 clips/month).</li>
+      <li><strong>Subscription Data:</strong> If you subscribe to Pro, payment processing is handled by Stripe via ExtensionPay. We do not store your payment information.</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>All clip data (summaries, tags, notes, URLs), settings, and optional API keys are stored locally in your browser using Chrome's storage API. No personal data or clip data is stored on external servers. Our backend server only proxies AI requests and does not retain any content.</p>
+
+    <h2>Third-Party Services</h2>
+    <ul>
+      <li><strong>OpenAI API:</strong> Page text is sent to OpenAI for summary and tag generation. See <a href="https://openai.com/privacy" target="_blank">OpenAI's Privacy Policy</a>.</li>
+      <li><strong>Cloudflare Workers:</strong> Our backend proxy runs on Cloudflare Workers. It forwards requests to OpenAI and does not store any user data.</li>
+      <li><strong>ExtensionPay / Stripe:</strong> Payment processing for Pro subscriptions. See <a href="https://stripe.com/privacy" target="_blank">Stripe's Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>We do not sell, trade, or transfer your personal information or clip data to third parties. Data is only shared with OpenAI for AI processing and Stripe for payment processing.</p>
+
+    <h2>Data Export and Deletion</h2>
+    <p>Pro users can export all clip data as JSON or Markdown at any time. You can delete individual clips from the Library tab. Uninstalling the extension removes all locally stored data.</p>
+
+    <h2>Your Rights</h2>
+    <p>You can uninstall the extension at any time to stop all data collection and delete all stored data. You can also clear stored data via Chrome's extension settings (chrome://extensions).</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy, please contact us through the Chrome Web Store listing.</p>
+  </div>
+</body>
+</html>
